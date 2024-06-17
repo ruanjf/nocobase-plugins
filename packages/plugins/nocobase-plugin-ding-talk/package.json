@@ -1,0 +1,15 @@
+{
+  "name": "nocobase-plugin-ding-talk",
+  "version": "0.1.1",
+  "displayName": "DingTalk",
+  "displayName.zh-CN": "钉钉",
+  "description": "Integrated DingTalk, including login and robot functions",
+  "description.zh-CN": "集成钉钉，包含登录及机器人等功能",
+  "main": "dist/server/index.js",
+  "dependencies": {},
+  "peerDependencies": {
+    "@nocobase/client": "1.x",
+    "@nocobase/server": "1.x",
+    "@nocobase/test": "1.x"
+  }
+}
