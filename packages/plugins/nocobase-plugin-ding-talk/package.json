@@ -1,6 +1,6 @@
 {
   "name": "nocobase-plugin-ding-talk",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "displayName": "DingTalk",
   "displayName.zh-CN": "钉钉",
   "description": "Integrated DingTalk, including login and robot functions",
