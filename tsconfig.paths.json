@@ -3,6 +3,15 @@
     "paths": {
       "@@/*": [
         ".dumi/tmp/*"
+      ],
+      "nocobase-plugin-ding-talk/client": [
+        "packages/plugins/nocobase-plugin-ding-talk/src/client"
+      ],
+      "nocobase-plugin-ding-talk/package.json": [
+        "packages/plugins/nocobase-plugin-ding-talk/package.json"
+      ],
+      "nocobase-plugin-ding-talk": [
+        "packages/plugins/nocobase-plugin-ding-talk/src"
       ]
     }
   }

@@ -1,19 +1,12 @@
+# nocobase-plugin-ding-talk
 
-## 已有插件
+## 功能
 
-[DingTalk](./packages/plugins/nocobase-plugin-ding-talk/) [![NPM badge](https://img.shields.io/npm/v/nocobase-plugin-ding-talk.svg)](https://www.npmjs.com/package/nocobase-plugin-ding-talk)
+- 钉钉登录
 
+## 开发
 
-## 安装Nocobase
-
-```shell
-yarn install
-yarn nocobase install
-yarn dev
-```
-
-
-## 创建插件
+### 创建插件
 
 ```shell
 yarn pm create nocobase-plugin-ding-talk
@@ -23,15 +16,7 @@ yarn pm add nocobase-plugin-ding-talk
 yarn pm enable nocobase-plugin-ding-talk
 ```
 
-## 更新插件
-
-```shell
-# model变化时执行
-yarn nocobase upgrade
-```
-
-
-## 打包插件
+### 打包插件
 
 ```shell
 yarn build nocobase-plugin-ding-talk --tar
@@ -41,7 +26,7 @@ yarn build nocobase-plugin-ding-talk
 yarn nocobase tar nocobase-plugin-ding-talk
 ```
 
-## 发布插件到npm仓库
+### 发布插件到npm仓库
 ```shell
 yarn publish packages/plugins/nocobase-plugin-ding-talk --registry=https://registry.npmjs.org
 ```

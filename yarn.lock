@@ -3240,9 +3240,9 @@
     jsonwebtoken "^8.5.1"
 
 "@nocobase/build@1.2.4-alpha":
-  version "1.2.3-alpha"
-  resolved "https://registry.npmmirror.com/@nocobase/build/-/build-1.2.3-alpha.tgz#f84f3159de9696a941e05697797debfb277c0d62"
-  integrity sha512-rVlb8vdgMosQeMsf5LcNgy2vQn8D/GZvR59VLCyikyOtaFVoNiPEoWb/UhxBBtb8xVyjmBDeG2zX40R29xMytQ==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/build/-/build-1.2.4-alpha.tgz#37a5d888b28928c908e368af0447433b1a0a3239"
+  integrity sha512-Cz0eD43K6QbJuPJBw5gGHfAas8hn+W8G6NxXZDa4ECca/kcsq55Kcu5JzRVbWXA4T4ieWzOcUS5PyToi2RCjpw==
   dependencies:
     "@babel/core" "7.22.10"
     "@babel/plugin-transform-modules-amd" "7.22.5"
@@ -3268,9 +3268,9 @@
     yargs-parser "13.1.2"
 
 "@nocobase/cache@1.2.4-alpha":
-  version "1.2.3-alpha"
-  resolved "https://registry.npmmirror.com/@nocobase/cache/-/cache-1.2.3-alpha.tgz#0cd4bf26dc0791129226c298dc459eeeffc6fbd0"
-  integrity sha512-nhiPZtfJ8EE2DVnDyWFWbgnsjNqoOt+Ca7toOyy9lFsW8wtSQzn7RlMHFJb6NDVGguAjFM0s39XzHL2cVY733Q==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/cache/-/cache-1.2.4-alpha.tgz#e98fbf5015cc9e9713a4eb33be398f94e84b1cd8"
+  integrity sha512-cL5HEN0dlVBY4L8YiTT/dkeYhQThMjJO/gEBL3E3Yv3ry8HNdheqIbWKAHekBRhjbK9DGICGmjx1N0pvp71G3w==
   dependencies:
     bloom-filters "^3.0.1"
     cache-manager "^5.2.4"
@@ -3494,14 +3494,14 @@
   integrity sha512-rywiElQywRJTgXGgxs+9VXnBq6mqnkOgoCqgREfs2RNmbu6IoGfUvr07Iz10dYr1pN1fzH1hhCuYclMbrkEA5A==
 
 "@nocobase/plugin-action-export@1.2.4-alpha":
-  version "1.2.3-alpha"
-  resolved "https://registry.npmmirror.com/@nocobase/plugin-action-export/-/plugin-action-export-1.2.3-alpha.tgz#39dca5f1673fbc182b2e4fe1cd79efdcba68ee91"
-  integrity sha512-QJbTaZeIrzo+JpJwPJZy7ykJ1LN05/5U10O+R2lctyx1End7H+z+M5X89T1MIbtdzo8KOmTOVxkzMbADr+uTJg==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/plugin-action-export/-/plugin-action-export-1.2.4-alpha.tgz#808c22ff878b27a758b8552fbac55e5f83b09fa9"
+  integrity sha512-fUmbusByGBgxv8y1LKmLQordCdDpnFCOtsQPkcoXfSVEhVfAygVd6F+K8xvm7oNk1DHz3uRZptXW7ZNWe/Om5Q==
 
 "@nocobase/plugin-action-import@1.2.4-alpha":
-  version "1.2.3-alpha"
-  resolved "https://registry.npmmirror.com/@nocobase/plugin-action-import/-/plugin-action-import-1.2.3-alpha.tgz#5c7e947b60d4adc8d8f2619019d41ceb96b4d6d5"
-  integrity sha512-nCtujwMbSe5/rQciSGgcHg9fCISihUtvf3DbZKwZdFv7OWptfp4WRuSO6uTWVsaWsTtezjYLDifu2GveMDbyiA==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/plugin-action-import/-/plugin-action-import-1.2.4-alpha.tgz#38df0fc0d50e08076318a3055496876cef9ea250"
+  integrity sha512-m9U4MBdk6CUiA8ch5H/N5hqC8zPumwABG3mvImP+Igthlfqekeb7/uNXuPq7ajXYht81bHE9LDAS+z5yooI9dw==
 
 "@nocobase/plugin-action-print@1.2.4-alpha":
   version "1.2.4-alpha"
@@ -3529,14 +3529,14 @@
   integrity sha512-a6uaJFUqbnuGhcNHmJt25K08wzsjsWCZyerrf+QczbRsbDOkdd4GHALCXwuG0Z9BUMrp05+m0xi2WpahmPbx3Q==
 
 "@nocobase/plugin-auth@1.2.4-alpha":
-  version "1.0.1-alpha.1"
-  resolved "https://registry.npmmirror.com/@nocobase/plugin-auth/-/plugin-auth-1.0.1-alpha.1.tgz#7d5b6f17ae5c2265321837973fa48dc4d5ff25b1"
-  integrity sha512-QGh/sEgzQTJlnB9W+x486Tkr11yTYS9Kx7mPvPaleW9sfl0xBxEq19xq1MsVRKKjPbw/SGtNOg4/Y6r/yokxeg==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/plugin-auth/-/plugin-auth-1.2.4-alpha.tgz#c173eccaf7a94f17b85799e6a4ab78edf90e2757"
+  integrity sha512-ssLpR27CvWl80ohIyERxhdxC9jLnkaQk4GK3YM2qvkFQiFKy9VbSchsMvBpHqDS/cvfn8W3+CXjG0CaQ9qbJPw==
 
 "@nocobase/plugin-backup-restore@1.2.4-alpha":
-  version "1.0.1-alpha.1"
-  resolved "https://registry.npmmirror.com/@nocobase/plugin-backup-restore/-/plugin-backup-restore-1.0.1-alpha.1.tgz#b352efe7a2f7452c177ce3524ed0de41108f3e68"
-  integrity sha512-hqlHrBtGZXgyE8LdZPf+SVTzRoQSESZ5xegcUZJcDyczGdnJb/cSS9ZAWMdNLXxQ+dWjxVpI0z59srj0PqLUJw==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/plugin-backup-restore/-/plugin-backup-restore-1.2.4-alpha.tgz#2a6882d7f9bd8520a67b46a5db78e3e556e6208b"
+  integrity sha512-Znm5DhmI3llmNOPOy6+Tk2l99Lu1p1fEFNHFe/LsWWd0VERclSqAvrc5/5ULXgetmo/vR2maXkyxA2TjZWZcRA==
 
 "@nocobase/plugin-block-iframe@1.2.4-alpha":
   version "1.2.4-alpha"
@@ -3554,14 +3554,14 @@
   integrity sha512-aIKVa40bS2Sx8BygQXHwycVmyJYIaPhc7ZElOMsJIMxEYju6EcgnDRqseGl0nMciPqkgF3+pBvK4pqXrxwCbMw==
 
 "@nocobase/plugin-charts@1.2.4-alpha":
-  version "1.0.1-alpha.1"
-  resolved "https://registry.npmmirror.com/@nocobase/plugin-charts/-/plugin-charts-1.0.1-alpha.1.tgz#d82d1308b54dc9f0f659e30c011f2a59a6b5e754"
-  integrity sha512-bh/Drjg9Z3TUcenIYSr4qwx9uyv3avlOhH6NJW2sg8FDwK5nPZAMGafORxx2LBhJpVrmwwbT6gMmxEsuFhPl9Q==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/plugin-charts/-/plugin-charts-1.2.4-alpha.tgz#8d88b06c1c3ca0090294c3733c3f69ff14d7dbdd"
+  integrity sha512-z0lgGSxRF760zQUZK3rEvnPhVYtgACoEibsf7LGSzHtleQ1FwRErHjF1E3R/dy6nFdmIQGWJx7AQLUnwzpZqtQ==
 
 "@nocobase/plugin-client@1.2.4-alpha":
-  version "1.0.1-alpha.1"
-  resolved "https://registry.npmmirror.com/@nocobase/plugin-client/-/plugin-client-1.0.1-alpha.1.tgz#4e4cbaedd77dc8b3d63aa5154018af8560c6c75a"
-  integrity sha512-rmwBSDItsSMWKstTWND+T+OYUnECJm96E3fMbm0HE5qQV8wgKz7y1pVPDkixFWbj58Z1dZAf5WbGmmwPMpWU1g==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/plugin-client/-/plugin-client-1.2.4-alpha.tgz#9d9dcec5491df2a4b047016c5f2b60ad48c8867f"
+  integrity sha512-TqYwE7QOcwIXurW0f+TZb9ldn0hz0oBc4+DzifZSGktOWoBJnzMPFg0FwrnWOFtSCZIkE9qiG6kfyTNly8h33A==
 
 "@nocobase/plugin-collection-sql@1.2.4-alpha":
   version "1.2.4-alpha"
@@ -3579,9 +3579,9 @@
   integrity sha512-dq3m669RNMSNlrCBrleCxJazO7vkfido2oAfpe8pjC5nFU1SwVH6uRer3CzJZlZgNeIe+QqaEdvOmQ5gWpuIig==
 
 "@nocobase/plugin-data-visualization@1.2.4-alpha":
-  version "1.0.1-alpha.1"
-  resolved "https://registry.npmmirror.com/@nocobase/plugin-data-visualization/-/plugin-data-visualization-1.0.1-alpha.1.tgz#a1b50aa4f6b4280f3759aee5db2e45b3c7db2332"
-  integrity sha512-n4CdMgS0HaXIqc1QM2oCD1JIMq845LP+H8f6zUQoHRqaC/aUFXC+g5L2rgQxtVHlffBaZ3wia7IbNiDPyCNPeA==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/plugin-data-visualization/-/plugin-data-visualization-1.2.4-alpha.tgz#67292768830c5731132219f9cd782c2177eac34f"
+  integrity sha512-zAnS69iyPjVVKKyaed8rxs30ahaF+SYSAp8ecxJnJCMX5+JeRGBT1zZYKIMh7aBo+2cZSnWC3XQoUYjUSDZpag==
 
 "@nocobase/plugin-error-handler@1.2.4-alpha":
   version "1.2.4-alpha"
@@ -3604,14 +3604,14 @@
   integrity sha512-3JdkCpFqaCoztByl0LkrzLlrDcE5Gk1BZhAYwxupawLLyAo97WNXCp/T1D3AIdeAhYtxATVsKRAw4W6n7M60Bg==
 
 "@nocobase/plugin-field-sequence@1.2.4-alpha":
-  version "1.2.3-alpha"
-  resolved "https://registry.npmmirror.com/@nocobase/plugin-field-sequence/-/plugin-field-sequence-1.2.3-alpha.tgz#d5584b7a2c883d433f784c8e97dbf23588401957"
-  integrity sha512-xJQc3MO2QVa8rJAB/fsZoG419OV/1REvpHOm5Qfqe9UgmlOcXUWZOxCLoAmskNyydZDPJn7/YcfIBpAsufWqlQ==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/plugin-field-sequence/-/plugin-field-sequence-1.2.4-alpha.tgz#19b62bd04ae06aa1dc2d234f42e4475f1f1bbe76"
+  integrity sha512-0pxEb8UGmYspqA+MKFPlt69E40Y4VrBAh7JameZkPI2sBbF8BITFrcGfQo8NJE/0UQrldVRp20T9F2wjFZKnwg==
 
 "@nocobase/plugin-file-manager@1.2.4-alpha":
-  version "1.0.1-alpha.1"
-  resolved "https://registry.npmmirror.com/@nocobase/plugin-file-manager/-/plugin-file-manager-1.0.1-alpha.1.tgz#973da3713c4aa38335b45028481ce16686416eb2"
-  integrity sha512-g7JHqcbp19mMUpUQkd5VoBbPkyZD1iqytU2iIVnHwhZ5zk6NAHyfl4Pg5obtmDI/NIpQfNgPVZsABhVl+htXTw==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/plugin-file-manager/-/plugin-file-manager-1.2.4-alpha.tgz#d2b53ba73347fc4f2ee08a9d1a284a471db4e754"
+  integrity sha512-sVMaVY48CmO1X1Qha90xOivpGMxlT7ENu7t2KiHxMclxWHOuBSb5ZEX7TYJUbcA3TkbataVqbo3FD6+SPA3uoA==
 
 "@nocobase/plugin-gantt@1.2.4-alpha":
   version "1.2.4-alpha"
@@ -3633,14 +3633,14 @@
     react-intersection-observer "^9.8.1"
 
 "@nocobase/plugin-localization@1.2.4-alpha":
-  version "1.2.3-alpha"
-  resolved "https://registry.npmmirror.com/@nocobase/plugin-localization/-/plugin-localization-1.2.3-alpha.tgz#c0d57ff99684edbe02e752a30c03cd1d9ce167cd"
-  integrity sha512-ffuTYpxiFRjMN1mtiXHUVh5ER03JeUvvJ+hg5SJXkTJ4fT1bMaHVYpBz+yZNMM6nkLdQpnIbV9oOfEUY7lNEjA==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/plugin-localization/-/plugin-localization-1.2.4-alpha.tgz#67432027e40228a9d5508491f880e1fc4d48a163"
+  integrity sha512-qrHHixTT3Ne0xSJ6Ij+GnuvKVu4qDRuIPxGK4YYel/KR3WNa+lY7+4D+vYtV079G+x4ERhDSJfaKeTDkvNmenw==
 
 "@nocobase/plugin-logger@1.2.4-alpha":
-  version "1.0.1-alpha.1"
-  resolved "https://registry.npmmirror.com/@nocobase/plugin-logger/-/plugin-logger-1.0.1-alpha.1.tgz#afc82daaf57bebaefc685524a049a1733b8861a9"
-  integrity sha512-0hEcAGauq0bRzoTN7cpdYqkUF0EwU41WaJOSsfQ5qXkmJz6c22vbU301VOgE66UF6chfA2i+s2dwzGo6Av0bDQ==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/plugin-logger/-/plugin-logger-1.2.4-alpha.tgz#b1a2f2ca3ae2a85df3e28e3ab40d884b898529a4"
+  integrity sha512-gJ0BTRDuefeBsQdIKeE5Hqi3fIOVXrOhYX4UuXQid2ZygATWGxtidhohL49JcoComcD4qs3MH2P+nbyW5JhcvQ==
 
 "@nocobase/plugin-map@1.2.4-alpha":
   version "1.2.4-alpha"
@@ -3653,14 +3653,14 @@
   integrity sha512-y+ju5qNLGt7vaHqZwdZD7rCxaay7CU4xBNbkI6CEUmHVqErKK+xT6dz5yj3tnhvyTddpxB4BjS0QNel4UfBarQ==
 
 "@nocobase/plugin-mock-collections@1.2.4-alpha":
-  version "1.0.1-alpha.1"
-  resolved "https://registry.npmmirror.com/@nocobase/plugin-mock-collections/-/plugin-mock-collections-1.0.1-alpha.1.tgz#fa82d6ffacdf21bdcd1df3dad2f3a0120c1fd44b"
-  integrity sha512-AZVvg9JkOZsxN7YqvxZwSge7p9bYzyzqgauA8awz4/kiMQFCI8iFasEnSvw00c594YP7tqxAujpGqJe+g1Vc0g==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/plugin-mock-collections/-/plugin-mock-collections-1.2.4-alpha.tgz#8612ec9a69d06927fe08c853f88d045affeccd86"
+  integrity sha512-3H3cHludMsOTwpJrZIKMbtveH1BQlRhlgYNdMbiYfNPZ+zXuKZpcO1OqRgnbUcfNgWnqNajkf+LljTNh+PPVNg==
 
 "@nocobase/plugin-multi-app-manager@1.2.4-alpha":
-  version "1.0.1-alpha.1"
-  resolved "https://registry.npmmirror.com/@nocobase/plugin-multi-app-manager/-/plugin-multi-app-manager-1.0.1-alpha.1.tgz#733e6159ff1c9a66f3601a8a733009c3419014e8"
-  integrity sha512-a5Lktc82FNQPOtNeKq5uY4M6riUYFc6k/xLmoCT2/FkuuJmSxWIJ5Im8y4T5YoUGfUyOHNDiNlO7H86AUmIfPw==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/plugin-multi-app-manager/-/plugin-multi-app-manager-1.2.4-alpha.tgz#befbee0559c9a381cadcdd3f1f2d1cc49354b780"
+  integrity sha512-bYbW+nNe0pVoDnO9ml/a3AnxGs5mjKP+WDdCnKyaeLOK1nzWJrhaA8Nxu8mCHvZk1XehGiiL5tPYvjW/IBwCgw==
 
 "@nocobase/plugin-multi-app-share-collection@1.2.4-alpha":
   version "1.2.4-alpha"
@@ -3683,9 +3683,9 @@
   integrity sha512-3kJfGf2On5QQqOh40WTW6VbXzjWmN0aslBrYZNxMiww2hzSnVPUfROtnluNgDI1wWfSFZj2yO6Yy0cvzZlL5IA==
 
 "@nocobase/plugin-ui-schema-storage@1.2.4-alpha":
-  version "1.2.3-alpha"
-  resolved "https://registry.npmmirror.com/@nocobase/plugin-ui-schema-storage/-/plugin-ui-schema-storage-1.2.3-alpha.tgz#6c93ab9ab21da3c3980a5d90786a1d2be927e56d"
-  integrity sha512-X8KXJBJ9HJDieSXF3fRKT4WQK8E0uElPxJGS36ENqh45oLq87xFXMaPKHFR5VmLbyf8iz8P9UwZOp4TI2ybYyQ==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/plugin-ui-schema-storage/-/plugin-ui-schema-storage-1.2.4-alpha.tgz#b9cd91c6bbcc118f7c7fe3dd46aa5f5afb3e817d"
+  integrity sha512-6M6IolmMMYtiBoTlQ+kRhjteyV+pn++wF2QQFgSCYrcAeWkn3IZ9EQHxnMic/OnglUAw4pjrDGBTYQCuADpLSg==
 
 "@nocobase/plugin-users@1.2.4-alpha":
   version "1.2.4-alpha"
@@ -3693,9 +3693,9 @@
   integrity sha512-vHCiKO+FdKGgs4oms4+LXsM+U9n2TzIya+r4j+Jqju5xhFgMm1lOKutYRTritfP4Ue9/9Sd1AhyN62gDLy1eRg==
 
 "@nocobase/plugin-verification@1.2.4-alpha":
-  version "1.0.1-alpha.1"
-  resolved "https://registry.npmmirror.com/@nocobase/plugin-verification/-/plugin-verification-1.0.1-alpha.1.tgz#b615a37caaddfa48c767b798780ee48473618f54"
-  integrity sha512-YzOxxL4TYL0Qk/0YVMM836QtivUaHTV9mu3trXyf8Fuyelb7X6pfIcvFOcy8Ra2vvaImMl+D+wfBGaBHB/5EUQ==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/plugin-verification/-/plugin-verification-1.2.4-alpha.tgz#654e30011b59c1ad5dfd91951d4f90046e753a5f"
+  integrity sha512-KsXgRnEnQpRBqi4rTd732XjAIuchtQfnqy8CS+jUFATgDOX+4qX2DApn7T1AToa7dzIpxWm1puLnE7TDmre13A==
 
 "@nocobase/plugin-workflow-action-trigger@1.2.4-alpha":
   version "1.2.4-alpha"
@@ -3751,17 +3751,17 @@
   resolved "https://registry.npmmirror.com/@nocobase/plugin-workflow-sql/-/plugin-workflow-sql-1.2.4-alpha.tgz#2c98c14114b47b40dc937fc7bca7fc191b30827d"
   integrity sha512-k2S2LXG9/1H7aoVfPphez5PuoFOwmGjPTj8MSErGWHO99uYmrhdGkAyDczgIRf2PP8pVRyl1Dbml5R+pCHJrMA==
 
-"@nocobase/plugin-workflow-test@1.0.1-alpha.1":
-  version "1.0.1-alpha.1"
-  resolved "https://registry.npmmirror.com/@nocobase/plugin-workflow-test/-/plugin-workflow-test-1.0.1-alpha.1.tgz#d77196a4db2142f06b7770ebc2185b4f2c9801ee"
-  integrity sha512-X6SkT7Pgdvy4ccoXQuFHEpqFUqweb/J1XWbSbFgnVRk0s/YVRxwJFf8N+PggYR+NQEu/6C02xku9M3hV8IKhKw==
+"@nocobase/plugin-workflow-test@1.2.4-alpha":
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/plugin-workflow-test/-/plugin-workflow-test-1.2.4-alpha.tgz#d7444692913bfd8517ab111f151a32cd71d22342"
+  integrity sha512-fDyboShjUWcx2BUxQsEHzEqoqqHUvYtpacrm/ehs3gL7F7ugqvGHBf7a55ATmj6afsFKjm2eXh8sNc7lkSTp0Q==
 
 "@nocobase/plugin-workflow@1.2.4-alpha":
-  version "1.0.1-alpha.1"
-  resolved "https://registry.npmmirror.com/@nocobase/plugin-workflow/-/plugin-workflow-1.0.1-alpha.1.tgz#09812fc7b4df0fc5387609e9616321324466c9ba"
-  integrity sha512-KBXl7/6KdK50efUyyi43BsZ+/c8Wclv2/f+HvQFYSH9zvBH3zhxR9hpj53GKTNjJzsODtunj+bgkM/LmqTMZiw==
+  version "1.2.4-alpha"
+  resolved "https://registry.npmmirror.com/@nocobase/plugin-workflow/-/plugin-workflow-1.2.4-alpha.tgz#3269e45b646462c598fe39c2089c7412450d2bc8"
+  integrity sha512-53+Z+WgzYGLaSXKqAZH2spWxQHR/ZlImi+8pAh9llGVSXLBxVpLwZwspgp+z4CAz5pl1OwjPWnXT6DnCm1npxw==
   dependencies:
-    "@nocobase/plugin-workflow-test" "1.0.1-alpha.1"
+    "@nocobase/plugin-workflow-test" "1.2.4-alpha"
 
 "@nocobase/preset-nocobase@1.2.4-alpha":
   version "1.2.4-alpha"

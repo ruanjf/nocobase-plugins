@@ -12,6 +12,8 @@
     "nocobase": "nocobase",
     "pm": "nocobase pm",
     "dev": "nocobase dev",
+    "dev-client-p": "PROXY_TARGET_URL=http://127.0.0.1:13003 nocobase dev --client -p 13002",
+    "dev-server-p": "nocobase dev --server -p 13003",
     "start": "nocobase start",
     "clean": "nocobase clean",
     "build": "nocobase build",
