@@ -37,6 +37,14 @@ export const dingTalkActions = {
     const auth = (await app.authManager.get(authenticatorName, ctx)) as DingTalkAuth
 
     const { user, token } = await auth.signIn()
-    ctx.redirect(`${redirect || process.env.APP_PUBLIC_PATH || '/'}?authenticator${encodeURIComponent(authenticatorName)}&token=${encodeURIComponent(token)}`)
+    let rediretPath: string = redirect;
+    if (rediretPath) {
+      if (rediretPath.startsWith('/')) {
+        rediretPath = rediretPath.substring(1);
+      }
+    } else {
+      rediretPath = '';
+    }
+    ctx.redirect(`${(process.env.APP_PUBLIC_PATH || '/') + rediretPath}?authenticator=${encodeURIComponent(authenticatorName)}&token=${encodeURIComponent(token)}`)
   },
 }

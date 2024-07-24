@@ -51,7 +51,7 @@ export const DingTalkAuthAdminSettingsForm = (props: { authenticator: Authentica
                     type: 'boolean',
                     // title: '{{t("Sign up automatically when the user does not exist")}}',
                     title: '用户不存在时自动注册',
-                    required: true,
+                    required: false,
                     'x-component': 'Checkbox',
                   },
                 },
