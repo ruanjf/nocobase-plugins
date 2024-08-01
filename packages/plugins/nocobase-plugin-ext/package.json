@@ -1,0 +1,28 @@
+{
+  "name": "nocobase-plugin-ext",
+  "version": "0.1.5",
+  "displayName": "Nocobase Ext",
+  "displayName.zh-CN": "Nocobase扩展",
+  "description": "Expand Nocobase component support",
+  "description.zh-CN": "扩展Nocobase提组件支持",
+  "keywords": [
+    "plugin",
+    "nocobase"
+  ],
+  "author": {
+    "name": "ruanjf",
+    "email": "runjf@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruanjf/nocobase-plugins.git",
+    "directory": "packages/plugins/nocobase-plugin-ext"
+  },
+  "main": "dist/server/index.js",
+  "dependencies": {},
+  "peerDependencies": {
+    "@nocobase/client": "1.x",
+    "@nocobase/server": "1.x",
+    "@nocobase/test": "1.x"
+  }
+}
