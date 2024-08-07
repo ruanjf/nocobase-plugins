@@ -1,6 +1,6 @@
 {
   "name": "nocobase-plugin-ext",
-  "version": "0.1.5",
+  "version": "0.1.11",
   "displayName": "Nocobase Ext",
   "displayName.zh-CN": "Nocobase扩展",
   "description": "Expand Nocobase component support",

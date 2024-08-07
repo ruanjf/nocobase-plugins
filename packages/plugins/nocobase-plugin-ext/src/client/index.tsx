@@ -1,10 +1,9 @@
 import { Plugin } from '@nocobase/client';
 import { DataDictionarySelectFieldInterface } from './interfaces';
+import { crudInit } from './crud/crudBlockInitializer';
 
 export class NocobasePluginExtClient extends Plugin {
-  async afterAdd() {
-    // await this.app.pm.add()
-  }
+  async afterAdd() {}
 
   async beforeLoad() {}
 
@@ -13,11 +12,8 @@ export class NocobasePluginExtClient extends Plugin {
     this.dataSourceManager.addFieldInterfaces([
       DataDictionarySelectFieldInterface
     ])
-    // this.app.addComponents({})
-    // this.app.addScopes({})
-    // this.app.addProvider()
-    // this.app.addProviders()
-    // this.app.router.add()
+
+    crudInit(this.app);
   }
 }
 
