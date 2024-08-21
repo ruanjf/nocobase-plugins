@@ -85,6 +85,7 @@ export const useCreateCrudBlock = () => {
     insert(
       createCrudBlockUISchema({
         collectionName: item.name,
+        collectionFields,
         dataSource: item.dataSource,
         config: values,
       }),
@@ -124,6 +125,8 @@ export function useCreateAssociationCrudBlock() {
     });
     insert(
       createCrudBlockUISchema({
+        collectionName: item.name,
+        collectionFields,
         association: `${field.collectionName}.${field.name}`,
         dataSource: item.dataSource,
         config: values,

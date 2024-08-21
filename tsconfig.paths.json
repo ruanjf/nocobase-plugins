@@ -12,6 +12,15 @@
       ],
       "nocobase-plugin-ding-talk": [
         "packages/plugins/nocobase-plugin-ding-talk/src"
+      ],
+      "nocobase-plugin-ext/client": [
+        "packages/plugins/nocobase-plugin-ext/src/client"
+      ],
+      "nocobase-plugin-ext/package.json": [
+        "packages/plugins/nocobase-plugin-ext/package.json"
+      ],
+      "nocobase-plugin-ext": [
+        "packages/plugins/nocobase-plugin-ext/src"
       ]
     }
   }

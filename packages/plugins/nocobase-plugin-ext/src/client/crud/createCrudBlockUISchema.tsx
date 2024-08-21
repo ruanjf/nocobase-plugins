@@ -160,12 +160,17 @@ export const createConfigSchema = ({
 }
 
 export const createCrudBlockUISchema = (options: {
+  collectionName: string;
+  collectionFields: CollectionFieldOptions[]
   config: ConfigType;
   dataSource: string;
   association?: string;
-  collectionName?: string;
 }): ISchema => {
-  const { config, collectionName, dataSource, association } = options;
+  const { config, collectionName, collectionFields, dataSource, association } = options;
+  const collectionFieldMap = collectionFields.reduce((r, v) => {
+    r[v.name] = v
+    return r;
+  }, {} as {[key: string]: CollectionFieldOptions})
 
   const schema = {
     "type": "void",
@@ -310,7 +315,14 @@ export const createCrudBlockUISchema = (options: {
                                                                                                           "x-component": "CollectionField",
                                                                                                           "x-decorator": "FormItem",
                                                                                                           "x-collection-field": `${collectionName}.${v.name}`,
-                                                                                                          "x-component-props": {},
+                                                                                                          "x-component-props": {
+                                                                                                            ...(collectionFieldMap[v.name]?.target ? {
+                                                                                                              "fieldNames": {
+                                                                                                                "label": collectionFieldMap[v.name]?.targetKey || "id",
+                                                                                                                "value": collectionFieldMap[v.name]?.targetKey || "id"
+                                                                                                              }
+                                                                                                            } : {})
+                                                                                                          },
                                                                                                         }
                                                                                                       },
                                                                                                     }
@@ -433,7 +445,7 @@ export const createCrudBlockUISchema = (options: {
                         "x-component": "CollectionField",
                         "x-component-props": {
                           // "ellipsis": true
-                          "enableLink": false
+                          "enableLink": false,
                         },
                         "x-read-pretty": true,
                         "x-decorator": null,
@@ -558,13 +570,20 @@ export const createCrudBlockUISchema = (options: {
                                                                                                                       "x-component": "Grid.Col",
                                                                                                                       "properties": {
                                                                                                                         [v.name]: {
-                                                                                                                          "type": v.type || "string",
+                                                                                                                          // "type": v.type || "string",
                                                                                                                           "x-toolbar": "FormItemSchemaToolbar",
                                                                                                                           "x-settings": "fieldSettings:FormItem",
                                                                                                                           "x-component": "CollectionField",
                                                                                                                           "x-decorator": "FormItem",
                                                                                                                           "x-collection-field": `${collectionName}.${v.name}`,
-                                                                                                                          "x-component-props": {},
+                                                                                                                          "x-component-props": {
+                                                                                                                            ...(collectionFieldMap[v.name]?.target ? {
+                                                                                                                              "fieldNames": {
+                                                                                                                                "label": collectionFieldMap[v.name]?.targetKey || "id",
+                                                                                                                                "value": collectionFieldMap[v.name]?.targetKey || "id"
+                                                                                                                              }
+                                                                                                                            } : {})
+                                                                                                                          },
                                                                                                                         }
                                                                                                                       },
                                                                                                                     }
