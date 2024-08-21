@@ -194,7 +194,7 @@ export class DingTalkApi {
     };
     if (res.status < 200 || res.status >= 300) {
       const text = await res.text();
-      console.error('fetch semaphore api error: ', r, text);
+      console.error('fetch dingTalk api error: ', r, text);
       throw new Error(text);
     }
     return (await res.json()) as T;

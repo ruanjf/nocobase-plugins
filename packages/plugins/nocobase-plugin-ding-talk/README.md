@@ -28,5 +28,5 @@ yarn nocobase tar nocobase-plugin-ding-talk
 
 ### 发布插件到npm仓库
 ```shell
-yarn publish packages/plugins/nocobase-plugin-ding-talk --registry=https://registry.npmjs.org
+npm publish packages/plugins/nocobase-plugin-ding-talk --registry=https://registry.npmjs.org
 ```
