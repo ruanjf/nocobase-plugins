@@ -2,18 +2,26 @@ import { ISchema } from '@formily/react';
 import { uid } from '@formily/shared';
 import { CollectionFieldOptions } from '@nocobase/client';
 
-export const opertions = ['create', 'edit', 'delete']
+export type FieldConfig = {
+  name: string
+  type: string
+  list: boolean
+  create: boolean
+  edit: boolean
+  valueRequired: boolean
+}
+
+export type Opertion = 'create' | 'edit' | 'delete'
 
 export type ConfigType = {
-  opertions: ('create' | 'edit' | 'delete')[]
-  fieldConfigs: {
-    name: string
-    type: string
-    list: boolean
-    create: boolean
-    edit: boolean
-  }[]
+  collectionTitle: string
+  opertions: Opertion[]
+  fieldConfigs: FieldConfig[]
 }
+
+export const opertions: ConfigType['opertions'] = ['create', 'edit', 'delete']
+
+export const sysFieldNames = ['createdAt', 'createdBy', 'updatedAt', 'updatedBy']
 
 export const createDefaultConfig = ({
   collection,
@@ -26,11 +34,22 @@ export const createDefaultConfig = ({
   },
   collectionFields: CollectionFieldOptions[]
 }) => {
-  return {
+  const val: ConfigType = {
     collectionTitle: collection.title || collection.name,
     opertions: opertions,
-    fieldConfigs: collectionFields.filter(a => !!a.uiSchema).map(a => ({ name: a.name, title: a.uiSchema?.title || a.comment || a.name, type: a.type }))
+    fieldConfigs: collectionFields
+      .filter(a => !!a.uiSchema)
+      .map(a => ({
+        name: a.name,
+        title: a.uiSchema?.title || a.comment || a.name,
+        type: a.type,
+        list: true,
+        create: !sysFieldNames.includes(a.name) && !(a.primaryKey && a.autoIncrement),
+        edit: !sysFieldNames.includes(a.name),
+        valueRequired: !a.allowNull
+      } as FieldConfig))
   }
+  return val
 }
 
 export const createConfigSchema = ({
@@ -309,7 +328,8 @@ export const createCrudBlockUISchema = (options: {
                                                                                                       "x-component": "Grid.Col",
                                                                                                       "properties": {
                                                                                                         [v.name]: {
-                                                                                                          "type": v.type || "string",
+                                                                                                          // "type": v.type || "string",
+                                                                                                          "required": v.valueRequired,
                                                                                                           "x-toolbar": "FormItemSchemaToolbar",
                                                                                                           "x-settings": "fieldSettings:FormItem",
                                                                                                           "x-component": "CollectionField",
@@ -468,7 +488,7 @@ export const createCrudBlockUISchema = (options: {
                     "x-initializer": "table:configureItemActions",
                     "x-settings": "fieldSettings:TableColumn",
                     "x-toolbar-props": {
-                        [uid()]: "table:configureItemActions"
+                        "initializer": "table:configureItemActions"
                     },
                     "x-action-column": "actions",
                     "x-component-props": {
@@ -571,6 +591,8 @@ export const createCrudBlockUISchema = (options: {
                                                                                                                       "properties": {
                                                                                                                         [v.name]: {
                                                                                                                           // "type": v.type || "string",
+                                                                                                                          "required": v.valueRequired,
+                                                                                                                          "x-read-pretty": collectionFieldMap[v.name]?.primaryKey || false,
                                                                                                                           "x-toolbar": "FormItemSchemaToolbar",
                                                                                                                           "x-settings": "fieldSettings:FormItem",
                                                                                                                           "x-component": "CollectionField",
