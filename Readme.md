@@ -12,6 +12,18 @@ yarn nocobase install
 yarn dev
 ```
 
+### 更新 Nocobase
+
+#### 更新到最新版
+
+`yarn nocobase upgrade`
+
+#### 更新到指定版本
+
+1. 修改`package.json`中的`@nocobase/cli`和`@nocobase/devtools`版本号
+2. 执行`yarn install`安装新版本
+3. 执行`yarn nocobase upgrade --skip-code-update`更新命令，其中`--skip-code-update`参数为无需加载新的版本
+
 
 ## 创建插件
 
