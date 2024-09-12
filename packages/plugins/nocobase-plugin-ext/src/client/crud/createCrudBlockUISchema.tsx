@@ -15,6 +15,7 @@ export type Opertion = 'create' | 'edit' | 'delete'
 
 export type ConfigType = {
   collectionTitle: string
+  tableSize: string
   opertions: Opertion[]
   fieldConfigs: FieldConfig[]
 }
@@ -36,6 +37,7 @@ export const createDefaultConfig = ({
 }) => {
   const val: ConfigType = {
     collectionTitle: collection.title || collection.name,
+    tableSize: 'small',
     opertions: opertions,
     fieldConfigs: collectionFields
       .filter(a => !!a.uiSchema)
@@ -64,6 +66,26 @@ export const createConfigSchema = ({
         'x-pattern': 'readPretty',
         'x-decorator': 'FormItem',
         'x-component': 'Input',
+      },
+      tableSize: {
+        title: t('Table size'),
+        enum: [
+          {
+            label: t('Small'),
+            value: 'small',
+          },
+          {
+            label: t('Middle'),
+            value: 'middle',
+          },
+          {
+            label: t('Large'),
+            value: 'large',
+          },
+        ],
+        required: true,
+        'x-decorator': 'FormItem',
+        'x-component': 'Select',
       },
       opertions: {
         title: t('CRUD opertions'),
@@ -449,7 +471,8 @@ export const createCrudBlockUISchema = (options: {
                 "rowKey": "id",
                 "rowSelection": {
                     "type": "checkbox"
-                }
+                },
+                "size": config.tableSize || undefined,
             },
             "properties": {
                 ...(config.fieldConfigs.filter(a => a.list).reduce((r,v) => {
@@ -464,7 +487,7 @@ export const createCrudBlockUISchema = (options: {
                         "x-collection-field": `${collectionName}.${v.name}`,
                         "x-component": "CollectionField",
                         "x-component-props": {
-                          // "ellipsis": true
+                          "ellipsis": true,
                           "enableLink": false,
                         },
                         "x-read-pretty": true,

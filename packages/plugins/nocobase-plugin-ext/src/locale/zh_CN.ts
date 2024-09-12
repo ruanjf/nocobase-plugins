@@ -11,4 +11,8 @@ export default {
   "Sort": "排序",
   "Field name": "字段名",
   "List": "列表",
+  "Table size": "表格尺寸",
+  "Small": "较窄",
+  "Middle": "中等",
+  "Large": "较宽",
 }
