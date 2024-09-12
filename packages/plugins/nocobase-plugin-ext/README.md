@@ -28,6 +28,13 @@ yarn nocobase tar nocobase-plugin-ext
 ```
 
 ### 发布插件到npm仓库
+
 ```shell
 npm publish packages/plugins/nocobase-plugin-ext --registry=https://registry.npmjs.org
+```
+
+### 更新插件
+
+```shell
+yarn pm update nocobase-plugin-ext --registry=https://registry.npmjs.org
 ```

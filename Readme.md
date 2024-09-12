@@ -42,6 +42,13 @@ yarn pm enable nocobase-plugin-ding-talk
 yarn nocobase upgrade
 ```
 
+## 添加插件依赖
+
+向`nocobase-plugin-service-api`插件添加依赖`json-schema-ref-parser`，依赖默认安装到`devDependencies`
+
+```shell
+yarn lerna add @apidevtools/json-schema-ref-parser --scope=nocobase-plugin-service-api -D
+```
 
 ## 打包插件
 
@@ -55,5 +62,5 @@ yarn nocobase tar nocobase-plugin-ding-talk
 
 ## 发布插件到npm仓库
 ```shell
-yarn publish packages/plugins/nocobase-plugin-ding-talk --registry=https://registry.npmjs.org
+npm publish packages/plugins/nocobase-plugin-ding-talk --registry=https://registry.npmjs.org
 ```

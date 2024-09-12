@@ -22,6 +22,10 @@
     "directory": "packages/plugins/nocobase-plugin-ding-talk"
   },
   "main": "dist/server/index.js",
+  "files": [
+    "CHANGELOG.md",
+    "dist/**"
+  ],
   "dependencies": {},
   "peerDependencies": {
     "@nocobase/client": "1.x",
