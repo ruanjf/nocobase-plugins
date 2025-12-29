@@ -72,7 +72,7 @@ export class DingTalkAuth extends BaseAuth {
       if (!user.email) {
         ctx.throw(400, '用户邮箱未配置');
       }
-      if (!this.#authConfigOptions.internal.emailDomains.some(a => userDetail.email.endsWith(a))) {
+      if (!this.#authConfigOptions.internal.emailDomains.some(a => user.email.endsWith(a))) {
         ctx.throw(400, `邮箱域名未启用 ${user.email}`);
       }
       filter = {
@@ -82,7 +82,7 @@ export class DingTalkAuth extends BaseAuth {
       if (!user.orgEmail) {
         ctx.throw(400, '用户企业邮箱未配置');
       }
-      if (!this.#authConfigOptions.internal.emailDomains.some(a => userDetail.org_email.endsWith(a))) {
+      if (!this.#authConfigOptions.internal.emailDomains.some(a => user.orgEmail.endsWith(a))) {
         ctx.throw(400, `邮箱域名未启用 ${user.orgEmail}`);
       }
       filter = {
@@ -97,12 +97,17 @@ export class DingTalkAuth extends BaseAuth {
     // 已有用户，则进行绑定
     let ncUser = await this.userRepository.findOne({ filter });
     if (ncUser) {
-      await this.authenticator.addUser(user, {
-        through: {
-          uuid: userId,
+      const UserAuthRepo = this.ctx.db.getRepository('usersAuthenticators');
+
+      await UserAuthRepo.create({
+        values: {
+          uuid: userId,                      // 钉钉的唯一 ID
+          userId: ncUser.id,                 // NocoBase 里的用户 ID
+          authenticator: authenticator.name
         },
       });
-      return await authenticator.findUser(userId);
+
+      return ncUser;
     }
 
     // 新用户
